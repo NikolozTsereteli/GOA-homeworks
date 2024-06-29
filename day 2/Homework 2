@@ -1,0 +1,8 @@
+Goa = " Goa Children :"
+Name0 = " Nikoloz kuprashvili,"
+Name1 = " Lukas Macaberidze,"
+Name2 = " Elene Garibovi "
+
+
+
+print ( Goa +" " + Name0 + " " + Name1 + " " + Name2 )
