@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Collapse Comparison</title>
+    <style>
+        /* ცხრილი border-collapse: separate */
+        .separate-table {
+            border-collapse: separate;
+            border-spacing: 10px; /* უჯრებს შორის მანძილი */
+            margin: 20px auto;
+            width: 70%;
+        }
+        /* ცხრილი border-collapse: collapse */
+        .collapse-table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 70%;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Border-Collapse: Separate</h2>
+    <table class="separate-table">
+        <tr>
+            <th>სვეტი 1</th>
+            <th>სვეტი 2</th>
+            <th>სვეტი 3</th>
+        </tr>
+        <tr>
+            <td>მონაცემი 1</td>
+            <td>მონაცემი 2</td>
+            <td>მონაცემი 3</td>
+        </tr>
+        <tr>
+            <td>მონაცემი 4</td>
+            <td>მონაცემი 5</td>
+            <td>მონაცემი 6</td>
+        </tr>
+    </table>
+
+    <h2 style="text-align: center;">Border-Collapse: Collapse</h2>
+    <table class="collapse-table">
+        <tr>
+            <th>სვეტი 1</th>
+            <th>სვეტი 2</th>
+            <th>სვეტი 3</th>
+        </tr>
+        <tr>
+            <td>მონაცემი 1</td>
+            <td>მონაცემი 2</td>
+            <td>მონაცემი 3</td>
+        </tr>
+        <tr>
+            <td>მონაცემი 4</td>
+            <td>მონაცემი 5</td>
+            <td>მონაცემი 6</td>
+        </tr>
+    </table>
+</body>
+</html>
