@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flag of Georgia</title>
+  <style>
+    body {
+      background: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .flag {
+      width: 360px;
+      height: 240px;
+      background: white;
+      position: relative;
+      border: 2px solid #ccc;
+    }
+
+    /* მთავარი დიდი ჯვარი */
+    .big-cross-vertical,
+    .big-cross-horizontal {
+      position: absolute;
+      background-color: red;
+    }
+
+    .big-cross-vertical {
+      width: 24px;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .big-cross-horizontal {
+      height: 24px;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    /* პატარა ჯვრები */
+    .small-cross {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: red;
+    }
+
+    .small-cross::before,
+    .small-cross::after {
+      content: "";
+      position: absolute;
+      background: red;
+    }
+
+    .small-cross::before {
+      width: 4px;
+      height: 20px;
+      left: 4px;
+      top: -4px;
+    }
+
+    .small-cross::after {
+      height: 4px;
+      width: 20px;
+      top: 4px;
+      left: -4px;
+    }
+
+    /* პოზიციონირება */
+    .top-left     { top: 20px; left: 20px; }
+    .top-right    { top: 20px; right: 20px; }
+    .bottom-left  { bottom: 20px; left: 20px; }
+    .bottom-right { bottom: 20px; right: 20px; }
+
+  </style>
+</head>
+<body>
+  <div class="flag">
+    <!-- დიდი ჯვარი -->
+    <div class="big-cross-vertical"></div>
+    <div class="big-cross-horizontal"></div>
+
+    <!-- ოთხი პატარა ჯვარი -->
+    <div class="small-cross top-left"></div>
+    <div class="small-cross top-right"></div>
+    <div class="small-cross bottom-left"></div>
+    <div class="small-cross bottom-right"></div>
+  </div>
+</body>
+</html>

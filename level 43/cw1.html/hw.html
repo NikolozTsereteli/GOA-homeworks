@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BMW Logo</title>
+  <style>
+    body {
+      background-color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .logo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: black;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .circle-inner {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      overflow: hidden;
+    }
+
+    .blue {
+      background-color: #1f5aa1;
+    }
+
+    .white {
+      background-color: white;
+    }
+
+    .logo-text {
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <div class="logo-text">BMW</div>
+    <div class="circle-inner">
+      <div class="white"></div>
+      <div class="blue"></div>
+      <div class="blue"></div>
+      <div class="white"></div>
+    </div>
+  </div>
+</body>
+</html>
